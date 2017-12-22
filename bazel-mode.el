@@ -1,10 +1,10 @@
 ;;; bazel-mode.el --- A major mode for editing Bazel files
 
-;; Version: 1.0.0
+;; Version: 1.0
 ;; Author: Neri Marschik
 ;; Url: https://github.com/codesuki/bazel-mode
 ;; Keywords: languages, bazel
-;; Package-Requires: ((emacs "24.3"))
+;; Package-Requires: ()
 
 ;;; Commentary:
 ;;
