@@ -70,7 +70,14 @@
   (setq-local comment-use-syntax t)
   (setq-local comment-start "#")
   (setq-local comment-end "")
-  (setq-local indent-tabs-mode nil))
+  (setq-local indent-tabs-mode nil)
+  
+  ;; Add imenu support
+  ;; Replace python-imenu-create-index with the default one
+  (setq-local imenu-create-index-function #'imenu-default-create-index-function)
+  ;; Simple regex over method names
+  (setq-local imenu-generic-expression
+              '(("Build rule" "name *= *\"\\(.*\\)\"" 1))))
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.bazel\\'" . bazel-mode))
