@@ -168,6 +168,7 @@
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.bazel\\'" . bazel-mode))
 (add-to-list 'auto-mode-alist '("\\.bzl\\'" . bazel-mode))
+(add-to-list 'auto-mode-alist '("BUILD\\'" . bazel-mode))
 (add-to-list 'auto-mode-alist '("WORKSPACE\\'" . bazel-mode))
 
 (provide 'bazel-mode)
